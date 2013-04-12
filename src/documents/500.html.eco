@@ -1,0 +1,15 @@
+---
+layout: 'default'
+title: '500 Internal Server Error'
+dynamic: true
+---
+
+<div class="hero-unit">
+    <h2>Какая-то ошибка</h2>
+    <p>
+       При отображении этой страницы что-то пошло не так.
+    </p>
+    <p>
+       Попробуйте <a href="#" onclick="window.location.reload()">обновить её</a>, или сходите на <a href="/">главную страницу</a>.
+    </p>
+</div>

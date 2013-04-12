@@ -1,0 +1,45 @@
+{
+  "name": "altyncev.ru",
+  "author": "Vladislav Altyncev",
+  "description": "Пишу о работе, жизни и всем что понравится. PS: А я чё? Я ничё. Другие вон чё, и ничё, а я чуть чё, и сразу вон чё!",
+  "version": "0.0.1",
+  "bugs": {
+    "url": "https://github.com/npofopr/_altyncev/issues?status=new&status=open"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "git@github.com:npofopr/_altyncev.git"
+    },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "docpad": "6.x",
+    "docpad-plugin-coffeescript": "2.x",
+    "docpad-plugin-eco": "2.0.x",
+    "docpad-plugin-coffeekup": "2.x",
+    "docpad-plugin-cleanurls": "2.x",
+    "docpad-plugin-paged": "2.x",
+    "docpad-plugin-marked": "2.x",
+    "docpad-plugin-partials": "2.x",
+    "docpad-plugin-stylus": "2.x",
+    "docpad-plugin-text": "2.x",
+    "docpad-plugin-related": "2.x",
+    "docpad-plugin-uglify": "2.x",
+    "docpad-plugin-sitemap": "x.x",
+    "docpad-plugin-highlightjs": "2.x",
+    "highlight.js": "x.x",
+    "moment": "x.x",
+    "underscore" : "x.x",
+    "docpad-plugin-robotskirt": "2.x"
+  },
+  "devDependencies": {
+    "coffee-script": "1.4.x",
+    "docpad-plugin-livereload": "2.x"
+  },
+  "main": "node_modules/docpad/bin/docpad-server",
+  "scripts": {
+    "start": "node_modules/docpad/bin/docpad-server"
+  }
+}

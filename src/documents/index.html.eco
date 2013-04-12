@@ -1,0 +1,57 @@
+---
+layout: 'defaultposts'
+isPaged: true
+pageOrder: 0
+pagedCollection: 'posts'
+pageSize: 30
+---
+<div class="container well">
+    <div class="row-fluid"> 
+        <div class="span12">
+            <div class="well well-small" style="background:#f9f9f9;">
+                <p class="text-info">Здесь будет текст :-)</p>
+            </div>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="span12">
+
+<% posts = @getCollection('posts') %>
+<% for i in [@document.page.startIdx...@document.page.endIdx]: %>
+    <% document = posts.at(i).toJSON() %>
+    <article class="post">
+        <p class="posts_date"><%= @formatDate(document.date) %></p>
+        <a href="<%= document.url %>"><h3><%= document.title %></h3></a>
+        <div class="post-content"><%- @getCuttedContent(String(document.contentRenderedWithoutLayouts)) %></div>
+        <% if @hasReadMore(String(document.contentRenderedWithoutLayouts)): %>
+        <div class="read_more"><a href="<%= document.url %>"><strong>Читать далее &rarr;</strong></a></div>
+        <% end %>
+    </article>
+<% end %>
+
+
+<div class="pagination">
+    <ul>
+        <% if !@getDocument().hasPrevPage(): %>
+            <li class="disabled"><span>«</span></li>
+        <% else: %>
+            <li><a href="<%= @getDocument().getPrevPage() %>">«</a></li>
+        <% end %>
+        <% for num in [0..@document.page.count-1]: %>
+            <% if @document.page.number == num: %>
+                <li class="active"><span><%= num %></span></li>
+            <% else: %>
+                <li><a href="<%= @getDocument().getPagedUrl(num) %>"><%= num %></a></li>
+            <% end %>
+        <% end %>
+        <% if !@getDocument().hasNextPage(): %>
+            <li class="disabled"><span>»</span></li>
+        <% else: %>
+            <li><a href="<%= @getDocument().getNextPage() %>">»</a></li>
+        <% end %>
+    </ul>
+</div>
+
+        </div>
+    </div>
+</div>
