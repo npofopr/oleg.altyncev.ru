@@ -69,17 +69,12 @@
         <div class="wrapper">
             <nav><!-- NAV MENU -->
                 <ul>
-                    <li><a href='index.html#/about'><span>О себе</span></a></li>
-                    <li><a href='index.html#/resume'><span>Резюме</span></a></li>
-                    <li><a href='index.html#/contact'><span>Написать</span></a></li>
-                    <li><a href='index.html#/portfolio'><span>Портфолио</span></a></li>
-                    <li class="current-menu-item"><a href='../posts.html'><span>Blog</span></a></li>
+                    <li class="current-menu-item"><a href='/posts'><span>Blog</span></a></li>
                 </ul>
             </nav><!-- end NAV MENU -->
             <div class="title"><!-- TITLE -->
               <!--<img src="http://themes.pixelwars.org/impressivcard/images/site/image-logo.png" alt="logo">-->
-                <h1><a class="name_logo" href="http://altyncev.ru">Vladislav Altyncev</a> <a class="rss_link" href="http://altyncev.ru/atom.xml" target="_blank"></a></h1>
-                <p>css-lover</p>
+                <h1><a class="name_logo" href="http://oleg.altyncev.ru">Заголовок )</a></h1>
             </div><!-- end TITLE -->
         
         </div>
