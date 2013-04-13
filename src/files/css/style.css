@@ -1,7 +1,7 @@
 @import "http://webfonts.ru/import/aquarion.css";
-/* @import "http://webfonts.ru/import/modernh.css";
+@import "http://webfonts.ru/import/modernh.css";
 @import "http://webfonts.ru/import/play.css";
-@import "http://webfonts.ru/import/ubuntu.css"; */
+@import "http://webfonts.ru/import/ubuntu.css";
 
 html, body,
 .wrap_container,
@@ -29,7 +29,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:#222; }
 .sidebar {background: #FFF; padding-left: 20px;}
 .logo h1  {font-size: 32px; line-height: 1.2;}
 
-.content_block {font-family: 'aquarion'; font-size: 1.1em; text-shadow: 1px -1px 0 #FFF;}
+.content_block {font-family: 'aquarion'; font-size: 1.2em; line-height: 1.2; text-shadow: 1px -1px 0 #FFF;}
 .content_block h1, .content_block h2, .content_block h3, .content_block h4, .content_block h5, .content_block h6 {font-family: 'aquarion';}
 .content_block a {padding: 0.3em 0 0.15em;}
 .content_block a:visited:not(:hover) {color: #8c64b4;}
