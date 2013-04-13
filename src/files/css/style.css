@@ -72,6 +72,13 @@ a.roll_link span:after {content: attr(data-title);display: block;position: absol
 .counter_item {margin: 0 0 3px;}
 
 .breadcrumb {margin:0;padding:8px 0;}
+
+/* tags */
+.tags{ margin:0 0 1em 0; padding:5px; list-style:none; }
+.tags li { display:inline-block; }
+.tags a{ display:inline-block; height:24px; line-height:24px; font-size:90%; position:relative; margin: 0 0 8px 20px; padding:0 10px 0 12px; } 
+.tags a:before{ content:""; float:left; position:absolute; top:0; left:-12px; width:0; height:0; border-color:transparent; border-right-color:#FC0; border-style:solid; border-width:12px 12px 12px 0; }
+.tags a:after{ content:""; position:absolute; top:10px; left:0; float:left; width:4px; height:4px; border-radius:50%; box-shadow:-1px -1px 2px rgba(0,0,0,0.1); background:#fff; }
 .tags {font-size: 11px;}
 
 pre {background:#FFF;}

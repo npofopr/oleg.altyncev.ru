@@ -49,7 +49,7 @@
 
     <!-- JavaScript
     ================================================== -->
-    <%- @getBlock('scripts').add(@site.scriptspost).toHTML() %>
+    <%- @getBlock('scripts').add(@site.scripts).toHTML() %>
 
     <!-- Kitty
     ================================================== -->
