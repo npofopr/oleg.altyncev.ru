@@ -56,7 +56,7 @@ docpadConfig = {
                 "/js/jquery-1.7.2.min.js"
                 "/js/jquery.fancybox.pack.js"
                 "/js/social-likes.min.js"
-                "/js/main_post.js"
+                "/js/scripts.js"
             ]
 
 

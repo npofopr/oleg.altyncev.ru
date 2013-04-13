@@ -9,12 +9,9 @@ layout: 'defaultpost'
 </ul>
 <div class="tags"><%=@document.tags%></div>
 
-<hr/>
 <div class="content_block">
   <%-@content%>
 </div>
-
-<hr/>
 
 <div class="paged_post clearfix">
 <% for document,documentIndex in @getCollection('posts').toJSON(): %>
