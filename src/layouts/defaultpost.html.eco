@@ -64,25 +64,16 @@
   <p class="chromeframe">Вы используете устаревший браузер. <a href="http://browsehappy.com/">Обновитесь!</a> or <a href="http://www.google.com/chromeframe/?redirect=true">установите Google Chrome Frame</a> чтобы в полной мере насладиться возможностями веба.</p>
 <![endif]-->
 
-    <!-- ************************ HEADER -->
-    <header id="header">
-        <div class="wrapper">
-            <nav><!-- NAV MENU -->
-                <ul>
-                    <li class="current-menu-item"><a href='/posts'><span>Blog</span></a></li>
-                </ul>
-            </nav><!-- end NAV MENU -->
-            <div class="title"><!-- TITLE -->
-                <h1><a class="name_logo" href="http://oleg.altyncev.ru">Заголовок )</a></h1>
-            </div><!-- end TITLE -->
-        
-        </div>
-    </header>
-    <!-- ************************ end HEADER -->
+<div class="row wrap_container">
+<div class="span3 sidebar">
+  <div class="logo">
+      <h1><a href="/">Жизнь маленького человека</a></h1>
+      <p><img src="/img/oleg.jpg" alt="" width="90%" class="img-polaroid"></p>
+  </div>
+</div>
+<div class="span9 wrap_content">
 
-<div class="clearfix"></div>
-
-<%-@content%>
+    <%-@content%>
 
       <hr/>
       <ul class="social-likes">
@@ -107,7 +98,6 @@
       <a href="http://hypercomments.com" class="hc-link" title="comments widget">comments powered by HyperComments</a>
       <hr/>
 
-    </div>
   </div>
 </div>
 

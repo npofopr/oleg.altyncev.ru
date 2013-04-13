@@ -29,7 +29,7 @@ docpadConfig = {
                 'olegsite.herokuapp.com'
             ]
             # The default title of our website
-            title: "Жизнь маленького Олега"
+            title: "Жизнь маленького человека"
             # The website description (for SEO)
             description: """
                 Происходящие рядом события, глазами окружающих
@@ -43,40 +43,16 @@ docpadConfig = {
 
             # Styles
             styles: [
-                "/css/normalize.css"
                 "/css/bootstrap.min.css"
-                "/css/jquery.transitions.css"
-                "/css/main.css"
-                "/css/animate.css"
                 "/css/jquery.fancybox.css"
                 "/css/social-likes.css"
                 "/css/code.css"
                 "/css/hint.min.css"
                 "/css/style.css"
-                "/css/websymbols.css"
             ]
 
             # Scripts for index
             scripts: [
-                "/js/jquery.address-1.4.min.js"
-                "/js/detectmobilebrowser.js"
-                "/js/jmpress.js"
-                "/js/iscroll.js"
-                "/js/jScroll.js"
-                "/js/modernizr.js"
-                "/js/jquery.isotope.min.js"
-                "/js/social-likes.min.js"
-                "/js/main_index.js"
-            ]
-
-            # Scripts for posts
-            scriptsposts: [
-                "/js/jquery-1.7.2.min.js"
-                "/js/main_posts.js"
-            ]
-
-            # Scripts for post item
-            scriptspost: [
                 "/js/jquery-1.7.2.min.js"
                 "/js/jquery.fancybox.pack.js"
                 "/js/social-likes.min.js"

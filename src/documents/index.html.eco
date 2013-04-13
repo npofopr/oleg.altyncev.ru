@@ -5,16 +5,7 @@ pageOrder: 0
 pagedCollection: 'posts'
 pageSize: 30
 ---
-<div class="container well">
-    <div class="row-fluid"> 
-        <div class="span12">
-            <div class="well well-small" style="background:#f9f9f9;">
-                <p class="text-info">Здесь будет текст :-)</p>
-            </div>
-        </div>
-    </div>
-    <div class="row-fluid">
-        <div class="span12">
+
 
 <% posts = @getCollection('posts') %>
 <% for i in [@document.page.startIdx...@document.page.endIdx]: %>
@@ -50,8 +41,4 @@ pageSize: 30
             <li><a href="<%= @getDocument().getNextPage() %>">»</a></li>
         <% end %>
     </ul>
-</div>
-
-        </div>
-    </div>
 </div>

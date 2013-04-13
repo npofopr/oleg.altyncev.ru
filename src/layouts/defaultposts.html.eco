@@ -64,26 +64,19 @@
   <p class="chromeframe">Вы используете устаревший браузер. <a href="http://browsehappy.com/">Обновитесь!</a> or <a href="http://www.google.com/chromeframe/?redirect=true">установите Google Chrome Frame</a> чтобы в полной мере насладиться возможностями веба.</p>
 <![endif]-->
 
-    <!-- ************************ HEADER -->
-    <header id="header">
-        <div class="wrapper">
-            <nav><!-- NAV MENU -->
-                <ul>
-                    <li class="current-menu-item"><a href='/posts'><span>Blog</span></a></li>
-                </ul>
-            </nav><!-- end NAV MENU -->
-            <div class="title"><!-- TITLE -->
-              <!--<img src="http://themes.pixelwars.org/impressivcard/images/site/image-logo.png" alt="logo">-->
-                <h1><a class="name_logo" href="http://oleg.altyncev.ru">Заголовок )</a></h1>
-            </div><!-- end TITLE -->
-        
-        </div>
-    </header>
-    <!-- ************************ end HEADER -->
+<div class="row wrap_container">
+<div class="span3 sidebar">
+  <div class="logo">
+      <h1><a href="/">Жизнь маленького человека</a></h1>
+      <p><img src="/img/oleg.jpg" alt="" width="90%" class="img-polaroid"></p>
+  </div>
+</div>
+<div class="span9 wrap_content">
 
-<div class="clearfix"></div>
+    <%-@content%>
 
-<%-@content%>
+</div>
+</div>
 
 <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter20952346 = new Ya.Metrika({id:20952346, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/20952346" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
 
