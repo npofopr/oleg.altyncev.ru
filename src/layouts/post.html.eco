@@ -17,10 +17,10 @@ layout: 'defaultpost'
 <% for document,documentIndex in @getCollection('posts').toJSON(): %>
     <% if @document.id is document.id: %>
         <% if documentIndex >= 1: %>
-            <a href="<%= @getCollection('posts').toJSON()[documentIndex-1].url %>" class="btn pull-left"><i class="icon-arrow-left"></i> Предыдущая запись</a>
+            <a href="<%= @getCollection('posts').toJSON()[documentIndex-1].url %>" class="btn btn-primary pull-left"><i class="icon-arrow-left"></i> Предыдущая запись</a>
         <% end %>
         <% if documentIndex < @getCollection('posts').length - 1: %>
-             <a href="<%= @getCollection('posts').toJSON()[documentIndex+1].url %>" class="btn pull-right"><i class="icon-arrow-right"></i> Следующая запись</a>
+             <a href="<%= @getCollection('posts').toJSON()[documentIndex+1].url %>" class="btn btn-primary pull-right"><i class="icon-arrow-right"></i> Следующая запись</a>
         <% end %>
     <% end %>
 <% end %>

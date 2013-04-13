@@ -5,7 +5,7 @@
 
 html, body,
 .wrap_container,
-.wrap_container [class*="span"] {height: 100%;}
+.wrap_container > [class*="span"] {height: 100%; min-height: 100%;}
 body {
   background-image:url(/img/white_wall_hash.png);
   font-family: 'Cuprum', sans-serif;

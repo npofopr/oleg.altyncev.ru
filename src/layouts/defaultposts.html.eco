@@ -63,18 +63,18 @@
 <![endif]-->
 
 <div class="row wrap_container">
-<div class="span3 sidebar">
-  <div class="logo">
-      <h1><a href="/">Жизнь маленького человека</a></h1>
-      <p><img src="/img/oleg.jpg" alt="нет, я не человек, я Олег!" align="middle" width="90%" class="img-polaroid"><br>
-        <em>"нет, я не человек, я Олег!"</em></p>
-  </div>
-</div>
-<div class="span9 wrap_content">
+    <div class="span3 sidebar">
+      <div class="logo">
+          <h1><a href="/">Жизнь маленького человека</a></h1>
+          <p><img src="/img/oleg.jpg" alt="нет, я не человек, я Олег!" align="middle" width="90%" class="img-polaroid"><br>
+            <em>"нет, я не человек, я Олег!"</em></p>
+      </div>
+    </div>
+    <div class="span9 wrap_content">
 
-    <%-@content%>
+        <%-@content%>
 
-</div>
+    </div>
 </div>
 
 <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter20952346 = new Ya.Metrika({id:20952346, webvisor:true, clickmap:true, trackLinks:true, accurateTrackBounce:true, trackHash:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/20952346" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
