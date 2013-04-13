@@ -66,7 +66,8 @@
 <div class="span3 sidebar">
   <div class="logo">
       <h1><a href="/">Жизнь маленького человека</a></h1>
-      <p><img src="/img/oleg.jpg" alt="" width="90%" class="img-polaroid"></p>
+      <p><img src="/img/oleg.jpg" alt="нет, я не человек, я Олег!" align="middle" width="90%" class="img-polaroid"><br>
+        <em>"нет, я не человек, я Олег!"</em></p>
   </div>
 </div>
 <div class="span9 wrap_content">
