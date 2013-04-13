@@ -1,7 +1,4 @@
 @import "http://webfonts.ru/import/aquarion.css";
-@import "http://webfonts.ru/import/modernh.css";
-@import "http://webfonts.ru/import/play.css";
-@import "http://webfonts.ru/import/ubuntu.css";
 
 html, body,
 .wrap_container,
@@ -49,6 +46,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:#222; }
 
 .pull-right {float: right;}
 .pull-left {float: left;}
+
+.paged_post {margin: 60px 0 25px;}
 
 h2.caption span, ul.personal-info .title, .btn, a.btn, a.btn:link, a.btn:visited:hover, a.btn:visited, a.btn:hover, .btn:hover, .btn-send, #header nav ul li.current-menu-item a { color:#fff; }
 
