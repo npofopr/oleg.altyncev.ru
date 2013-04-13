@@ -2,7 +2,7 @@
 layout: 'defaultpost'
 ---
 
-<div class="post_date"><%= @formatDate(@document.date) %></div>
+<div class="post_date" style="margin-top: 20px;"><%= @formatDate(@document.date) %></div>
 <ul class="breadcrumb">
   <li><a href="/">Главная</a> <span class="divider">/</span></li>
   <li class="active"><h1><%=@document.title%> <a class="edit_post" href="https://github.com/npofopr/oleg.altyncev.ru/blob/master/src<%=@document.fullPath.replace(@srcPath,'')%>" target="_blank"><span class="hint hint--left" data-hint="Хотите отредактировать?"><i class="icon-pencil"></i></span></a></h1></li>
