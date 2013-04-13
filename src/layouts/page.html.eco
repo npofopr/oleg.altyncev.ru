@@ -1,7 +1,0 @@
----
-layout: 'defaultmin'
----
-<article id="post" class="post">
-    <h1><%= @document.title %></h1>
-    <div class="post-content"><%- @content %></div>
-</article>
