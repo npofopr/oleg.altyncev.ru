@@ -1,49 +1,47 @@
 ---
 layout: 'defaultpost'
 ---
-<div class="container well">
-  <div class="row-fluid">
-    <div class="span12">
-      <div class="post_date"><%= @formatDate(@document.date) %></div>
-      <ul class="breadcrumb">
-        <li><a href="/">Главная</a> <span class="divider">/</span></li>
-        <li class="active"><h1><%=@document.title%> <a class="edit_post" href="https://github.com/npofopr/oleg.altyncev.ru/blob/master/src<%=@document.fullPath.replace(@srcPath,'')%>" target="_blank"><span class="hint hint--left" data-hint="Хотите отредактировать?"><i class="icon-pencil"></i></span></a></h1></li>
-      </ul>
-      <div class="tags"><%=@document.tags%></div>
 
-      <hr/>
-      <div class="content_block">
-        <%-@content%>
-      </div>
+<div class="post_date"><%= @formatDate(@document.date) %></div>
+<ul class="breadcrumb">
+  <li><a href="/">Главная</a> <span class="divider">/</span></li>
+  <li class="active"><h1><%=@document.title%> <a class="edit_post" href="https://github.com/npofopr/oleg.altyncev.ru/blob/master/src<%=@document.fullPath.replace(@srcPath,'')%>" target="_blank"><span class="hint hint--left" data-hint="Хотите отредактировать?"><i class="icon-pencil"></i></span></a></h1></li>
+</ul>
+<div class="tags"><%=@document.tags%></div>
 
-      <hr/>
+<hr/>
+<div class="content_block">
+  <%-@content%>
+</div>
 
-      <div class="paged_post clearfix">
-      <% for document,documentIndex in @getCollection('posts').toJSON(): %>
-          <% if @document.id is document.id: %>
-              <% if documentIndex >= 1: %>
-                  <a href="<%= @getCollection('posts').toJSON()[documentIndex-1].url %>" class="btn pull-left"><i class="icon-arrow-left"></i> Предыдущая запись</a>
-              <% end %>
-              <% if documentIndex < @getCollection('posts').length - 1: %>
-                   <a href="<%= @getCollection('posts').toJSON()[documentIndex+1].url %>" class="btn pull-right"><i class="icon-arrow-right"></i> Следующая запись</a>
-              <% end %>
-          <% end %>
-      <% end %>
-      </div>
+<hr/>
 
-      <hr/>
-
-      <footer class="article-footer">
-        <% if  @document.relatedDocuments and @document.relatedDocuments.length: %>
-        <section id="related">
-            <h3>Похожие статьи</h3>
-            <nav class="linklist">
-              <% for document in @document.relatedDocuments: %>
-                <li><span><%= @formatDate(@document.date) %></span>
-                &raquo;
-                <a href="<%= document.url %>"><%= document.title %></a></li>
-              <% end %>
-            </nav>
-        </section>
+<div class="paged_post clearfix">
+<% for document,documentIndex in @getCollection('posts').toJSON(): %>
+    <% if @document.id is document.id: %>
+        <% if documentIndex >= 1: %>
+            <a href="<%= @getCollection('posts').toJSON()[documentIndex-1].url %>" class="btn pull-left"><i class="icon-arrow-left"></i> Предыдущая запись</a>
         <% end %>
-      </footer>
+        <% if documentIndex < @getCollection('posts').length - 1: %>
+             <a href="<%= @getCollection('posts').toJSON()[documentIndex+1].url %>" class="btn pull-right"><i class="icon-arrow-right"></i> Следующая запись</a>
+        <% end %>
+    <% end %>
+<% end %>
+</div>
+
+<hr/>
+
+<footer class="article-footer">
+  <% if  @document.relatedDocuments and @document.relatedDocuments.length: %>
+  <section id="related">
+      <h3>Похожие статьи</h3>
+      <nav class="linklist">
+        <% for document in @document.relatedDocuments: %>
+          <li><span><%= @formatDate(@document.date) %></span>
+          &raquo;
+          <a href="<%= document.url %>"><%= document.title %></a></li>
+        <% end %>
+      </nav>
+  </section>
+  <% end %>
+</footer>
