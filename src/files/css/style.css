@@ -27,7 +27,6 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:#222; }
 ::-moz-selection { text-shadow:none; color:#333; background:#FFFF66; }
 
 .sidebar {background: #FFF; padding-left: 20px;}
-.wrap_content {padding: 20px 0 0;}
 .logo h1  {font-size: 32px; line-height: 1.2;}
 
 .content_block {font-family: 'aquarion'; font-size: 1.1em; text-shadow: 1px -1px 0 #FFF;}
@@ -195,7 +194,7 @@ table.related-links {width: 100%;}
   vertical-align: top;
 } */
 article.post {
-  margin: 0 0 45px;
+  margin: 15px 0 45px;
   padding: 5px;
   display: block;
   -webkit-border-radius: 5px;
