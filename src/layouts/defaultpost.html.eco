@@ -71,8 +71,8 @@
     </div>
   </div>
   <div class="span9 wrap_content">
-
-    <%-@content%>
+    <div class="row-fluid">
+      <%-@content%>
 
       <hr/>
       <ul class="social-likes">
@@ -96,6 +96,7 @@
       })();</script>
       <a href="http://hypercomments.com" class="hc-link" title="comments widget">comments powered by HyperComments</a>
       <hr/>
+    </div>
 
   </div>
 </div>
