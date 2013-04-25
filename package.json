@@ -11,13 +11,13 @@
     "url" : "git@github.com:npofopr/_altyncev.git"
     },
   "engines": {
-    "node": "0.8.x",
-    "npm": "1.2.x"
+    "node": "0.10",
+    "npm": "1.2"
   },
-  "dependencies": {
+  "dependencies": { 
     "docpad": "6.x",
     "docpad-plugin-coffeescript": "2.x",
-    "docpad-plugin-eco": "2.0.x",
+    "docpad-plugin-eco": "2.x",
     "docpad-plugin-coffeekup": "2.x",
     "docpad-plugin-cleanurls": "2.x",
     "docpad-plugin-paged": "2.x",
@@ -29,9 +29,9 @@
     "docpad-plugin-uglify": "2.x",
     "docpad-plugin-sitemap": "x.x",
     "docpad-plugin-highlightjs": "2.x",
-    "highlight.js": "x.x",
-    "moment": "x.x",
-    "underscore" : "x.x",
+    "highlight.js": "*",
+    "moment": "*",
+    "underscore" : "*",
     "docpad-plugin-robotskirt": "2.x"
   },
   "devDependencies": {
