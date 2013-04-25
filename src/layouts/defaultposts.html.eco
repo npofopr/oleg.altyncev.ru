@@ -53,7 +53,7 @@
     ================================================== -->
     <script src="http://kittycheck.com/js/inject.js"></script>
     <meta name="kittycheck_position" content="top=40,right=40" />
-    <meta name="kittycheck_rumble" content="true" />
+    <meta name="kittycheck_rumble" content="true" /> 
     
 </head>
 <body id="top">
