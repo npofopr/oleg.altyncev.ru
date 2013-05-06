@@ -23,7 +23,8 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:#222; }
 ::selection { text-shadow:none; color:#333; background:#FFFF66; }
 ::-moz-selection { text-shadow:none; color:#333; background:#FFFF66; }
 
-.sidebar {background: #FFF; padding-left: 20px;}
+.sidebar {background: #FFF; padding-left: 20px; position: fixed;}
+.wrap_content {margin-left: 350px;}
 .logo h1  {font-size: 32px; line-height: 1.2;}
 
 .content_block {font-family: 'aquarion'; font-size: 1.2em; line-height: 1.2; text-shadow: 1px -1px 0 #FFF;}
