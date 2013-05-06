@@ -34,70 +34,70 @@ tags: 'trip, village'
 
 <ul class="thumbnails">
 	<li class="span3">
-		<a class="thumbnail" href="http://yadi.sk/d/dejwSbLE4bJcu">
-			<img class="img-polaroid" src="http://yadi.sk/d/dejwSbLE4bJcu" alt="">
+		<a class="thumbnail" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090759.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090759.JPG" alt="">
 		</a>
 	</li>
 	<li class="span3">
-		<a class="thumbnail" href="http://yadi.sk/d/RAL4AUR54bJg4">
-			<img class="img-polaroid" src="http://yadi.sk/d/RAL4AUR54bJg4" alt="">
+		<a class="thumbnail" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090769.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090769.JPG" alt="">
 		</a>
 	</li>
 	<li class="span3">
-		<a class="thumbnail fancybox" href="http://yadi.sk/d/Jl8VozfN4bJjY">
-			<img class="img-polaroid" src="http://yadi.sk/d/Jl8VozfN4bJjY" alt="">
+		<a class="thumbnail fancybox" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090778.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090778.JPG" alt="">
 		</a>
 	</li>
 	<li class="span3">
-		<a class="thumbnail fancybox" href="http://yadi.sk/d/Tk0ewf-p4bJnA">
-			<img class="img-polaroid" src="http://yadi.sk/d/Tk0ewf-p4bJnA" alt="">
-		</a>
-	</li>
-</ul>
-<ul class="thumbnails">
-	<li class="span3">
-		<a class="thumbnail fancybox" href="http://yadi.sk/d/hAOcpLtn4bJu4">
-			<img class="img-polaroid" src="http://yadi.sk/d/hAOcpLtn4bJu4" alt="">
-		</a>
-	</li>
-	<li class="span3">
-		<a class="thumbnail fancybox" href="http://yadi.sk/d/6-PkyJN_4bJyA">
-			<img class="img-polaroid" src="http://yadi.sk/d/6-PkyJN_4bJyA" alt="">
-		</a>
-	</li>
-	<li class="span3">
-		<a class="thumbnail fancybox" href="http://yadi.sk/d/llgJp_x44bK0m">
-			<img class="img-polaroid" src="http://yadi.sk/d/llgJp_x44bK0m" alt="">
-		</a>
-	</li>
-	<li class="span3">
-		<a class="thumbnail fancybox" href="http://yadi.sk/d/44_MDi5Y4bK37">
-			<img class="img-polaroid" src="http://yadi.sk/d/44_MDi5Y4bK37" alt="">
+		<a class="thumbnail fancybox" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090783.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090783.JPG" alt="">
 		</a>
 	</li>
 </ul>
 <ul class="thumbnails">
 	<li class="span3">
-		<a class="thumbnail fancybox" href="http://yadi.sk/d/IH0alEnH4bK6F">
-			<img class="img-polaroid" src="http://yadi.sk/d/IH0alEnH4bK6F" alt="">
+		<a class="thumbnail fancybox" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090786.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090786.JPG" alt="">
 		</a>
 	</li>
 	<li class="span3">
-		<a class="thumbnail fancybox" href="http://yadi.sk/d/OfupBuys4bK8t">
-			<img class="img-polaroid" src="http://yadi.sk/d/OfupBuys4bK8t" alt="">
+		<a class="thumbnail fancybox" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090789.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090789.JPG" alt="">
 		</a>
 	</li>
 	<li class="span3">
-		<a class="thumbnail fancybox" href="http://yadi.sk/d/IoBYX6JG4bKAv">
-			<img class="img-polaroid" src="http://yadi.sk/d/IoBYX6JG4bKAv" alt="">
+		<a class="thumbnail fancybox" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090798.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090798.JPG" alt="">
 		</a>
 	</li>
 	<li class="span3">
-		<a class="thumbnail fancybox" href="http://yadi.sk/d/PXuXWZRe4bKD4">
-			<img class="img-polaroid" src="http://yadi.sk/d/PXuXWZRe4bKD4" alt="">
+		<a class="thumbnail fancybox" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090802.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090802.JPG" alt="">
+		</a>
+	</li>
+</ul>
+<ul class="thumbnails">
+	<li class="span3">
+		<a class="thumbnail fancybox" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090806.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090806.JPG" alt="">
+		</a>
+	</li>
+	<li class="span3">
+		<a class="thumbnail fancybox" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090815.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090815.JPG" alt="">
+		</a>
+	</li>
+	<li class="span3">
+		<a class="thumbnail fancybox" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090818.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090818.JPG" alt="">
+		</a>
+	</li>
+	<li class="span3">
+		<a class="thumbnail fancybox" href="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090825.JPG">
+			<img class="img-polaroid" src="https://dl.dropboxusercontent.com/u/935663/altycev/posts/2013/13-04-13/P1090825.JPG" alt="">
 		</a>
 	</li>
 </ul>
 
 <p>Больше на <a href="http://plus.google.com/u/0/photos/101977946165928245952/albums/5874889386924228305" target="_blank">Google+</a></p>
-<p>Не уверен, что откроется, да и там только для друзяшек :-)</p>
+<p>Не уверен, что откроется, да и там только для друзяшек + какой то круг, в котором я не помню даже кто :-) Если что пишите.</p>
