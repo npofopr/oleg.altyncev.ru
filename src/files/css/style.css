@@ -24,8 +24,17 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:#222; }
 ::-moz-selection { text-shadow:none; color:#333; background:#FFFF66; }
 
 .sidebar {background: #FFF; padding-left: 20px; position: fixed;}
-.wrap_content {margin-left: 350px;}
+.wrap_content {margin-left: 300px;}
 .logo h1  {font-size: 32px; line-height: 1.2;}
+@media (min-width:768px) and (max-width:979px){
+  .wrap_content {margin-left: 240px;}
+  .logo h1  {font-size: 24px;}
+}
+@media (max-width:767px){
+  .sidebar {position: relative; height: auto !important; min-height: auto !important;}
+  .logo img {display: none;}
+  .wrap_content {margin-left: 10px;}
+}
 
 .content_block {font-family: 'aquarion'; font-size: 1.2em; line-height: 1.2; text-shadow: 1px -1px 0 #FFF;}
 .content_block h1, .content_block h2, .content_block h3, .content_block h4, .content_block h5, .content_block h6 {font-family: 'aquarion';}
