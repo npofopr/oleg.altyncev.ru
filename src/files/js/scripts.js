@@ -20,11 +20,3 @@ $(document).ready(function() {
 		});
 	});*/
 });
-// Tags
-	var OurString = $(".tags").html();
-	var NewOurString="";
-	OurString=OurString.split(", ");
-	for(i=0;i<OurString.length;i++ ){
-	NewOurString= NewOurString+"<div class='tag_item'>"+OurString[i]+"</div> ";
-	}
-	$(".tags").html(NewOurString);
