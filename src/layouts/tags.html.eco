@@ -1,0 +1,12 @@
+---
+layout: 'defaultpost'
+---
+<div class="content_block">
+	<h2>Страницы с тегом: '<%= @document.tag %>'</h2>
+
+	<ul>
+	<% for doc in @getCollection('posts').findAll({tags: '$in': @document.tag}).toJSON(): %>
+	    <li><a href="<%= doc.url %>"><%= doc.title %></a></li>
+	<% end %>
+	</ul>
+</div>
