@@ -80,15 +80,6 @@ a.roll_link span:after {content: attr(data-title);display: block;position: absol
 .counter_item {margin: 0 0 3px;}
 
 .breadcrumb {margin:0;padding:8px 0;}
-
-/* tags */
-.tags{ margin:0 0 1em 0; padding:5px; list-style:none; }
-.tags li { display:inline-block; }
-.tags a{ display:inline-block; height:24px; line-height:24px; font-size:90%; position:relative; margin: 0 0 8px 20px; padding:0 10px 0 12px; } 
-.tags a:before{ content:""; float:left; position:absolute; top:0; left:-12px; width:0; height:0; border-color:transparent; border-right-color:#FC0; border-style:solid; border-width:12px 12px 12px 0; }
-.tags a:after{ content:""; position:absolute; top:10px; left:0; float:left; width:4px; height:4px; border-radius:50%; box-shadow:-1px -1px 2px rgba(0,0,0,0.1); background:#fff; }
-.tags {font-size: 11px;}
-
 pre {background:#FFF;}
 ol.well, ul.well {list-style-position: inside; display: inline-block;}
 
@@ -118,14 +109,16 @@ ol.well, ul.well {list-style-position: inside; display: inline-block;}
 
 .container {margin-top: 35px;}
 
-.tags {
-  clear: both;
-  margin: 0 0 25px 15px;
-}
+/* tags */
+.tags { font-size: 11px; margin:0 0 1em 0; padding:5px; list-style:none; clear: both; margin: 0 0 25px; }
+.tags ul {margin: 0;}
+.tags li { display:inline-block; }
+.list_tags {margin: 0 0 50px 25px;}
+.list_tags a {font-size: 1.3em;}
 .tag_item {
   display: inline-block;
   height: 21px;
-  margin: 0 10px 0 5px;
+  margin: 0 10px 5px 0;
   padding: 0 7px 0 14px;
   white-space: nowrap;
   position: relative;
