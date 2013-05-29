@@ -3,7 +3,7 @@ layout: 'defaultposts'
 isPaged: true
 pageOrder: 0
 pagedCollection: 'posts'
-pageSize: 30
+pageSize: 5
 ---
 
 
