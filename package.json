@@ -11,7 +11,7 @@
     "url" : "git@github.com:npofopr/_altyncev.git"
     },
   "engines": {
-    "node": "0.8",
+    "node": "0.10",
     "npm": "1.2"
   },
   "dependencies": { 
