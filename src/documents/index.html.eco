@@ -8,12 +8,12 @@ pageSize: 20
             <!-- Page Content -->
             <% for document in @getCollection('posts').toJSON()[@document.page.startIdx...@document.page.endIdx]: %>
                 <article class="post">
-                    <h3><span class="posts_date"><%= @formatDate(document.date) %></span></span> <a class="post_head" href='<%=document.url%>'><%= document.title %></h3>
-                    <h1></a></h1>
-                    
+                    <h3><span class="posts_date"><%= @formatDate(document.date) %></span></span> <a class="post_head" href='<%=document.url%>'><%= document.title %></a></h3>
+
                     <div class="post-content">
                         <%- @getCuttedContent(String(document.contentRenderedWithoutLayouts)) %>
                     </div>
+
                     <div class="read_more"><a href="<%= document.url %>"><strong>Читать далее &rarr;</strong></a></div>
                 </article>
             <% end %>
@@ -23,25 +23,25 @@ pageSize: 20
                 <ul>
                     <!-- Previous Page Button -->
                     <% unless @hasPrevPage(): %>
-                        <li class="disabled"><span>«</span></li>
+                        <li class="page_arrow disabled"><span class="paginate page_prev"><i></i><i></i></span></li>
                     <% else: %>
-                        <li><a href="<%= @getPrevPage() %>">«</a></li>
+                        <li class="page_arrow"><a class="paginate page_prev" href="<%= @getPrevPage() %>"><span class="paginate page_prev"><i></i><i></i></span></a></li>
                     <% end %>
 
                     <!-- Page Number Buttons -->
                     <% for pageNumber in [0..@document.page.count-1]: %>
                         <% if @document.page.number is pageNumber: %>
-                            <li class="active"><span><%= pageNumber + 1 %></span></li>
+                            <li><span class="page active"><%= pageNumber + 1 %></span></li>
                         <% else: %>
-                            <li><a href="<%= @getPageUrl(pageNumber) %>"><%= pageNumber + 1 %></a></li>
+                            <li><a class="page" href="<%= @getPagedUrl(pageNumber) %>"><%= pageNumber + 1 %></a></li>
                         <% end %>
                     <% end %>
 
                     <!-- Next Page Button -->
                     <% unless @hasNextPage(): %>
-                        <li class="disabled"><span>»</span></li>
+                        <li class="page_arrow disabled"><span class="paginate page_next"><i></i><i></i></span></li>
                     <% else: %>
-                        <li><a href="<%= @getNextPage() %>">»</a></li>
+                        <li class="page_arrow"><a class="paginate page_next" href="<%= @getNextPage() %>"><i></i><i></i></a></li>
                     <% end %>
                 </ul>
             </div>

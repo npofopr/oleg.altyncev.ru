@@ -1,0 +1,15 @@
+---
+title: "Список Тегов"
+layout: 'defaultpost'
+---
+
+<div class="container well container_block">
+	<div class="pure-g">
+		<div class="pure-u-1">
+
+			<h2>Страницы с тегом <%= @document.tag %>:</h2>
+			<ul><% for file in @getFiles({tags: $has: @document.tag}, [title:1]).toJSON(): %>
+				<li>
+					<a href="<%= file.url %>"><%= file.title %></a>
+				</li>
+			<% end %></ul>

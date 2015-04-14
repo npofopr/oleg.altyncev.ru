@@ -8,13 +8,7 @@ layout: 'defaultpost'
   <li class="active"><h1><%=@document.title%></h1></li>
 </ul>
 
-<div class="tags">
-  <ul>
-    <% for tag in @document.tags: %>
-      <li><a class="tag_item" href="<%= @getTagUrl(tag) %>"><%= tag %></a></li>
-    <% end %>
-  </ul>
-</div>
+<div class="tags"><%= @document.tags %></div>
 
 <div class="content_block">
   <%-@content%>

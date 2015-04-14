@@ -1,25 +1,48 @@
-hl = require 'highlight.js'
-moment = require('moment')
-moment.lang('ru')
-_ = require 'underscore'
+moment = require 'moment'
+moment.locale('ru')
 
-authors =
-  'Altyncev Vladislav':
-    name: 'Altyncev Vladislav'
-    email: 'v@altyncev.ru'
-    github: 'npofopr'
-    twitter: 'npofopr'
-    gravata: 'vladislavaltyncev'
+authors = 'Altyncev Vladislav'
+email = 'v@altyncev.ru'
+github = 'npofopr'
+twitter = 'npofopr'
+gravata = 'vladislavaltyncev'
+
+# =================================
+# Helpers
+
+# Titles
+getName = (a,b) ->
+    if b is null
+        return textData[b] ? humanize(b)
+    else
+        return textData[a][b] ? humanize(b)
+getProjectName = (project) ->
+    getName('projectNames',project)
+getCategoryName = (category) ->
+    getName('categoryNames',category)
+getLinkName = (link) ->
+    getName('linkNames',link)
+getLabelName = (label) ->
+    getName('labelNames',label)
+
+# Humanize
+humanize = (text) ->
+    text ?= ''
+    return strUtil.humanize text.replace(/^[\-0-9]+/,'').replace(/\..+/,'')
 
 # The DocPad Configuration File
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
+
+    # Regenerate each day
+    regenerateEvery: 1000*60*60*24
 
     # =================================
     # Template Data
     # These are variables that will be accessible via our templates
     # To access one of these within our templates, refer to the FAQ: https://github.com/bevry/docpad/wiki/FAQ
     templateData:
+
         # Specify some site properties
         site:
             # The production url of our website
@@ -64,15 +87,22 @@ docpadConfig = {
         # -----------------------------
         # Helper Functions
 
+        # Names
+        getName: getName
+        getProjectName: getProjectName
+        getCategoryName: getCategoryName
+        getLinkName: getLinkName
+        getLabelName: getLabelName
+
         # Get the prepared site/document title
         # Often we would like to specify particular formatting to our page's title
         # we can apply that formatting here
         getPreparedTitle: ->
-            # if we have a document title, then we should use that and suffix the site's title onto it
-            if @document.title                
-                "#{@document.title} | #{@site.title}"
-            # if our document does not have it's own title, then we should just use the site's title
-            else
+            # if we have a title, we should use it suffixed by the site's title
+            if @document.pageTitle isnt false and @document.title
+                "#{@document.pageTitle or @document.title} | #{@site.title}"
+            # if we don't have a title, then we should just use the site's title
+            else if @document.pageTitle is false or @document.title? is false
                 @site.title
         # Get the prepared site/document description
         getPreparedDescription: ->
@@ -84,17 +114,21 @@ docpadConfig = {
             # Merge the document keywords with the site keywords
             @site.keywords.concat(@document.keywords or []).join(', ')
 
-        getCuttedContent: (content) ->            
+        getCuttedContent: (content) ->
             i = content.search('<!-- Read more -->')
             if i >= 0
-                content[0..i-1]                
+                content[0..i-1]
             else
                 content
 
         hasReadMore: (content) ->
             content.search('<!-- Read more -->') >= 0
 
-        formatDate: (date,format='dddd, MMMM DD YYYY') -> return moment(date).format(format)
+        formatDate: (date,format='LL') ->
+            return moment(date).format(format)
+
+        formatDateArt: (date,format='L') ->
+            return moment(date).format(format)
 
 
 
@@ -112,10 +146,10 @@ docpadConfig = {
         #posts: (database) ->
         #    database.findAllLive({relativeOutDirPath:'posts'},[date:-1])
 
-        #posts: (database) -> 
+        #posts: (database) ->
         #    database.findAll({relativeOutDirPath:/posts[\/\\]\w+/},[date:-1])
 
-        posts: (database) -> 
+        posts: (database) ->
             database.findAll({relativeOutDirPath:/posts/},[date:-1])
 
 
@@ -127,42 +161,44 @@ docpadConfig = {
     # Should contain the plugin short names on the left, and the configuration to pass the plugin on the right
     plugins:
 
-        robotskirt:
-            robotskirtOptions:
-                EXT_AUTOLINK: true
-                EXT_FENCED_CODE: true
-                EXT_LAX_SPACING: true
-                EXT_NO_INTRA_EMPHASIS: true
-                EXT_SPACE_HEADERS: true
-                EXT_STRIKETHROUGH: true
-                EXT_SUPERSCRIPT: true
-                EXT_TABLES: true
-                HTML_SKIP_HTML: false
-                HTML_SKIP_STYLE: false
-                HTML_SKIP_IMAGES: false
-                HTML_SKIP_LINKS: false
-                HTML_EXPAND_TABS: false
-                HTML_SAFELINK: false
-                HTML_TOC: false
-                HTML_HARD_WRAP: false
-                HTML_USE_XHTML: true
-                HTML_ESCAPE: false
-            smartypants: true
-            highlightjs:
-                replaceTab: '    '
-
-        #stylus:
-        #    useNib: false
+        stylus:
+            stylusLibraries:
+                nib: false
+            stylusOptions:
+                compress: true
+                'include css': true
 
         sitemap:
             cachetime: 600000
             changefreq: 'weekly'
             priority: 0.5
 
-    #environments:
-    #    debug:
-    #        frontendDebug: true
+        cleanurls:
+            static: true
 
+        paged:
+            split: false
+            prefix: ''
+            index: 1
+            compatibility: true
+
+        tags:
+            injectDocumentHelper: (document) ->
+                document
+                    .setMeta(
+                        layout: 'tag'
+                    )
+
+    #
+    environments:
+        development:
+            stylusOptions:
+                compress: false
+
+        highlightjs:
+            aliases:
+                missinglanguage: 'alternativelanguage'
+            replaceTab: '    '
 
 
     # =================================
@@ -171,9 +207,6 @@ docpadConfig = {
     # Here we can define handlers for events that DocPad fires
     # You can find a full listing of events on the DocPad Wiki
     events:
-
-        extendTemplateData: (opts) ->
-            opts.templateData.srcPath = @docpad.getConfig().srcPath
 
         # Server Extend
         # Used to add our own custom routes to the server before the docpad routes are added
@@ -196,6 +229,10 @@ docpadConfig = {
                 else
                     next()
 
+
+        # =================================
+        # Environment Configuration
+        env: 'production'
 
 }
 

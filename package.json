@@ -1,43 +1,39 @@
 {
   "name": "altyncev.ru",
   "author": "Vladislav Altyncev",
-  "description": "Пишу о работе, жизни и всем что понравится. PS: А я чё? Я ничё. Другие вон чё, и ничё, а я чуть чё, и сразу вон чё!",
-  "version": "0.0.1",
+  "description": "Пишу о работе, жизни и всем что понравится. PS: А я чё? Я ничё. Другие вон чё, и ничё, а я чуть чё, и сразу вон чё! npofopr",
+  "version": "0.4.0",
   "bugs": {
     "url": "https://github.com/npofopr/_altyncev/issues?status=new&status=open"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "git@github.com:npofopr/_altyncev.git"
-    },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:npofopr/_altyncev.git"
+  },
   "engines": {
-    "node": "0.10",
-    "npm": "1.2"
+    "node": "0.10.x",
+    "npm": "2.5.x"
   },
-  "dependencies": { 
-    "docpad": "6.x",
-    "docpad-plugin-coffeescript": "2.x",
-    "docpad-plugin-eco": "2.x",
-    "docpad-plugin-paged": "2.x",
-    "docpad-plugin-marked": "2.x",
-    "docpad-plugin-partials": "2.x",
-    "docpad-plugin-cleanurls": "2.x",
-    "docpad-plugin-coffeekup": "2.x",
-    "docpad-plugin-stylus": "2.x",
-    "docpad-plugin-text": "2.x",
-    "docpad-plugin-related": "2.x",
-    "docpad-plugin-uglify": "2.x",
-    "docpad-plugin-sitemap": "*",
-    "docpad-plugin-highlightjs": "2.x",
-    "highlight.js": "*",
-    "moment": "*",
-    "underscore": "*",
-    "docpad-plugin-robotskirt": "2.x",
-    "docpad-plugin-tagging": "2.x"
-  },
-  "devDependencies": {
-    "coffee-script": "1.4.x",
-    "docpad-plugin-livereload": "2.x"
+  "dependencies": {
+    "coffee-script": "^1.9.1",
+    "docpad": "^6.78.1",
+    "docpad-plugin-autoprefix": "^2.0.0",
+    "docpad-plugin-cleanurls": "^2.7.0",
+    "docpad-plugin-coffeekup": "^2.2.0",
+    "docpad-plugin-coffeescript": "^2.5.0",
+    "docpad-plugin-eco": "^2.1.0",
+    "docpad-plugin-ect": "^2.0.1",
+    "docpad-plugin-gist": "^2.1.1",
+    "docpad-plugin-highlightjs": "^2.3.0",
+    "docpad-plugin-marked": "^2.3.0",
+    "docpad-plugin-paged": "^2.4.0",
+    "docpad-plugin-partials": "^2.9.2",
+    "docpad-plugin-related": "^2.2.2",
+    "docpad-plugin-sitemap": "^2.2.0",
+    "docpad-plugin-stylus": "^2.9.0",
+    "docpad-plugin-tags": "^2.0.7",
+    "docpad-plugin-text": "^2.3.3",
+    "moment": "^2.9.0"
   },
   "main": "node_modules/docpad/bin/docpad-server",
   "scripts": {
